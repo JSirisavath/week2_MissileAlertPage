@@ -1,0 +1,70 @@
+#Missile_Alert_Heading {
+  text-align: center;
+  background-color: beige;
+  color: brown;
+  position: relative;
+}
+
+.alert__container {
+  display: flex;
+  /* Column like style */
+  justify-content: space-between;
+
+  position: relative;
+
+  overflow: hidden;
+
+  background-color: aliceblue;
+
+  outline-style: double;
+
+  outline-color: red;
+
+  border-radius: 10px;
+}
+
+.alert__realalert__Container::before,
+.alert__test_container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 50%;
+  z-index: -1;
+}
+
+.alert__realalert__Container::before {
+  left: 0;
+}
+
+.alert__test_container::before {
+  right: 0;
+}
+
+#real-alert {
+  color: orange;
+  background-color: black;
+  font-size: large;
+}
+
+#test-only {
+  color: lightskyblue;
+  background-color: darkolivegreen;
+  font-size: large;
+}
+
+.missile-link {
+  text-align: center;
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+}
+
+body {
+  background-image: linear-gradient(to bottom, antiquewhite, #f5f5dc);
+}
+
+.missile-link .icon {
+  margin-right: 50px;
+  font-size: 25px;
+}
