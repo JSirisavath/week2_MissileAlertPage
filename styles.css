@@ -5,6 +5,7 @@
   position: relative;
 }
 
+/* Alert Container style */
 .alert__container {
   display: flex;
   /* Column like style */
